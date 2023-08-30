@@ -2,3 +2,10 @@
     transform: rotatey(360deg);
     transition: 2s;
 }
+
+.back-foto {
+    margin-top: 80px;
+    background-image: url(../img/Stockx/fondo_summer.jpg);
+    height: 450px; 
+
+}
