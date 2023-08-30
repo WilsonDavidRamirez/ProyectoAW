@@ -1,0 +1,62 @@
+[
+    {
+        "id": "3",
+        "titulo": "Abrigito",
+        "imagen": "./img/abrigos/01.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 100
+    },
+    {
+        "id": "4",
+        "titulo": "Abrigito Acojedor",
+        "imagen": "./img/abrigos/02.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 150
+    },
+    {
+        "id": "1",
+        "titulo": "Camisita",
+        "imagen": "./img/camisetas/01.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 40
+    },
+    {
+        "id": "2",
+        "titulo": "Camisita Blanca",
+        "imagen": "./img/camisetas/02.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 50
+    },
+    {
+        "id": "4",
+        "titulo": "Pantalonsito",
+        "imagen": "./img/pantalones/01.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 70
+    },
+    {
+        "id": "5",
+        "titulo": "Pantalonsito Negro",
+        "imagen": "./img/pantalones/03.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 80
+    }
+]
