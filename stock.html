@@ -7,10 +7,36 @@
   <title>Stock X</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/home.css">
 </head>
 
+<style>
+  #rotaciones{
+    color: aliceblue;
+  }
+  .img1:hover {
+    transform: rotatey(360deg);
+    transition: 2s;
+}
+    .back-foto {
+      margin-top: 80px;
+      background-image: url(../ProyectoAW/img/Stockx/tienda_nike.jpg);
+      background-position: center; /* Centra la imagen verticalmente y horizontalmente */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+      height: 450px; 
+
+}
+
+  .center-images img {
+    margin-left: auto; /* Agrega margen izquierdo auto para mover a la derecha */
+  }
+
+</style>
+
+
 <body>
+  <section id="introduccion">
+    <p>Hola mundo</p>
+  </section>
 
 
   <section class="carrusel">
@@ -99,11 +125,11 @@
       </div>
     </div>
   </section>
+  <br>
+  <h1 class="display text-center">Las Mejores Zapatillas del Verano</h1>
   <section id="rotaciones">
-    <div class="jumbotron jumbotron-fluid back-foto">
-      <h1 class="display">Las Mejores Zapatillas del Verano</h1>
-
-      <div class="row">
+    <div class="back-foto">
+      <div class="row center-images">
         <img src="../ProyectoAW/img/Stockx/img1.png" class="img1">
         <img src="../ProyectoAW/img/Stockx/img2.png" class="img1">
       </div>
