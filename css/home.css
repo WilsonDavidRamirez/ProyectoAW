@@ -1,0 +1,4 @@
+.img1:hover {
+    transform: rotatey(360deg);
+    transition: 2s;
+}
