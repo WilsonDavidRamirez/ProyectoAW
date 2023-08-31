@@ -1,0 +1,16 @@
+<<<<<<< HEAD
+sfalama@espe.edu.ec:Fabricio:Alama:$2y$10$EffLwAdbDijxH9uX31NxdecYNWh0qwZj3qqsyUv8M3k4pjyAgG/L6
+fabricioalama2001@outlook.es:Steven:Alama:$2y$10$9VHH7Z6z.akh1dfwif6VLu06VSgThwXS2HREpIoNOb5/u5Km1wXE2
+mami@gmail.com:Areli:Duarte:$2y$10$RKIqKINhgOs6d7tu04Va4.AC3TRXmxfOUHQqUluZxjf7H1xAIh6ty
+mami@gmail.com:fabri:asda:$2y$10$Jl7vWgmwqDWbQsJphdism.aFzFF3R1CmN1q6cbeC62d2RjNK0mOUK
+mami@gmail.com:fabri:asda:$2y$10$Jl7vWgmwqDWbQsJphdism.aFzFF3R1CmN1q6cbeC62d2RjNK0mOUK
+mami@gmail.com:fabri:asda:$2y$10$zINL/37i92xAsO66qp4V7OfHtp1EyglKij6KP5L5qXlxGBXvo8Wo.
+mami@gmail.com:asda:dasd:$2y$10$Mg7J7Uu/in9n/FsQ.M72auJ6uCF2GfmZhcnzPerY6dZOhz8c00TjW
+mami@gmail.com:asda:dasd:$2y$10$b3qfNlGjudwXy/xbT0sK9u07V7FgXrcV6dgq9HFIYIDjU3j/oHyOO
+mami@gmail.com:asd:asda:$2y$10$nVk/2UfbpNYR4FlfuVPwpuW1iPp6Slx42opyBwLivViRhbHupJeDO
+fabricioalam@outlook.es:fabri:alama:$2y$10$fHczSo06xHV4QbnDX5/DuuVO5/uafE7lgLOGVyzrffdiMN3pYBuOC
+david@espe:david:david:$2y$10$fRd8guZDZob.BZgMjjW2POciPV/MbE66LLTi/TUFjsHx3XlYoxeT6
+admin@gmail.com:Fabricio:Alama:$2y$10$7viqeN.hfCIGGvyFts1kQuu.xJCPnNqhtVchZSY6QdMx7oIBvBnCW
+feo@outlook.es:fabri:alama:$2y$10$tGcjij9BFhtMrs/3LJ9mV.hSQAComLH5jRK85/6IgRhaV7h4bMUN.
+=======
+>>>>>>> 610531900a93ee2a670fa449228cf8d79638000f
