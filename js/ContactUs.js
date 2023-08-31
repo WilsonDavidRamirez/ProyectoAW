@@ -1,3 +1,28 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contacUS");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Evita que el formulario se envíe normalmente
+
+    const firstName = document.getElementById("firstName").value;
+    const lastName = document.getElementById("lastName").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
+
+    const messageContent = `
+                First Name: ${firstName}
+                Last Name: ${lastName}
+                Email: ${email}
+                Phone Number: ${phone}
+                Message: ${message}
+            `;
+
+    alert(messageContent); // Muestra los datos en un alert
+  });
+});
+
+/*
+
 jQuery.validator.addMethod(
   "lettersonly",
   function (value, element) {
@@ -140,3 +165,5 @@ $(function () {
     },
   });
 });
+
+*/

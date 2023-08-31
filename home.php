@@ -15,19 +15,16 @@ session_start();
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/Count_Us.css" />
+
 </head>
 
 <body>
-
     <div class="wrapper">
-
         <header class="header-mobile">
             <h1 class="logo">Stock X</h1>
             <button class="open-menu" id="open-menu">
                 <i class="bi bi-list"></i>
             </button>
-
         </header>
         <aside>
             <button class="close-menu" id="close-menu">
@@ -50,6 +47,7 @@ session_start();
                     ?>
                 </div>
             </header>
+            <br> <br> <br> <br> <br> <br> <br>
             <nav>
                 <ul class="menu">
                     <li>
@@ -70,13 +68,13 @@ session_start();
                     </li>
                 </ul>
             </nav>
+            <br> <br> <br> <br> <br> <br> <br> <br>
             <footer>
                 <p class="texto-footer">© 2023 Stock X</p>
             </footer>
         </aside>
         <main>
             <div id="contenedor-productos">
-
 
             </div>
         </main>
@@ -93,8 +91,6 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
-
-    <script src="./js/ContactUs.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/menu.js"></script>
 

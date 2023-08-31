@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+
 $registrationMessage = ""; // Inicializa el mensaje de registro
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register"])) {

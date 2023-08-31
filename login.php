@@ -1,5 +1,7 @@
 <?php
 // Configurar el tiempo de vida de la sesión en segundos (30 minutos)
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+
 $session_duration = 30 * 60; // 30 minutos en segundos
 
 // Iniciar sesión con la configuración de tiempo de vida
