@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -26,6 +30,26 @@
             </button>
             <header>
                 <h1 class="logo">Stock X</h1>
+                <?php
+if (isset($_SESSION["email"])) {
+    // Usuario en sesión
+    echo "Bienvenido, " . $_SESSION["email"] . ". Estás en sesión.";
+    echo '<form action="logout.php" method="post">';
+    echo '<button type="submit" title="Cerrar sesión">Cerrar sesión</button>';
+    echo '</form>';
+} else {
+    // Usuario no en sesión
+    if (isset($_GET["type"]) && $_GET["type"] === "sneakers") {
+        // Mostrar botón de inicio de sesión si no está en sesión y en la página "sneakers"
+        echo '<a href="login.php">Iniciar sesión</a>';
+    } else {
+        // Mostrar botón de inicio de sesión si no está en sesión en otras páginas
+        echo '<a href="login.php">Iniciar sesión</a>';
+    }
+}
+?>
+
+             
             </header>
             <nav>
                 <ul class="menu">
@@ -46,7 +70,7 @@
                                 class="bi bi-hand-index-thumb"></i> Pantalones</button>
                     </li>
                     <li>
-                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                        <a class="boton-menu boton-carrito" href="./carrito.php">
                             <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
                         </a>
                     </li>
@@ -61,10 +85,9 @@
             </footer>
         </aside>
         <main>
-            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+        <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
             <div id="contenedor-productos" class="contenedor-productos">
-                <!-- Esto se va a rellenar con JS -->
-            </div>
+              
         </main>
     </div>
 

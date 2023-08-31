@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,7 +19,7 @@
 
     <div class="wrapper">
         <header class="header-mobile">
-            <h1 class="logo">ServiEntrega</h1>
+            <h1 class="logo">Stock X</h1>
             <button class="open-menu" id="open-menu">
                 <i class="bi bi-list"></i>
             </button>
@@ -25,17 +29,35 @@
                 <i class="bi bi-x"></i>
             </button>
             <header>
-                <h1 class="logo">ServiEntrega</h1>
+                <h1 class="logo">Stock X</h1>
+                <?php
+if (isset($_SESSION["email"])) {
+    // Usuario en sesión
+    echo "Bienvenido, " . $_SESSION["email"] . ". Estás en sesión.";
+    echo '<form action="logout.php" method="post">';
+    echo '<button type="submit" title="Cerrar sesión">Cerrar sesión</button>';
+    echo '</form>';
+} else {
+    // Usuario no en sesión
+    if (isset($_GET["type"]) && $_GET["type"] === "sneakers") {
+        // Mostrar botón de inicio de sesión si no está en sesión y en la página "sneakers"
+        echo '<a href="login.php">Iniciar sesión</a>';
+    } else {
+        // Mostrar botón de inicio de sesión si no está en sesión en otras páginas
+        echo '<a href="login.php">Iniciar sesión</a>';
+    }
+}
+?>
             </header>
             <nav>
                 <ul>
                     <li>
-                        <a class="boton-menu boton-volver" href="./wilo.html">
+                        <a class="boton-menu boton-volver" href="./wilo.php">
                             <i class="bi bi-arrow-return-left"></i> Seguir comprando
                         </a>
                     </li>
                     <li>
-                        <a class="boton-menu boton-carrito active" href="./carrito.html">
+                        <a class="boton-menu boton-carrito active" href="./carrito.php">
                             <i class="bi bi-cart-fill"></i> Carrito
                         </a>
                     </li>
@@ -58,12 +80,26 @@
                     <div class="carrito-acciones-izquierda">
                         <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
                     </div>
-                    <div class="carrito-acciones-derecha">
-                        <div class="carrito-acciones-total">
-                            <p>Total:</p>
-                            <p id="total">$3000</p>
-                        </div>
-                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+                    <?php
+                // Verificar si el usuario está en sesión y mostrar el botón "Comprar ahora"
+                if (isset($_SESSION["email"])) {
+                    echo '<div class="carrito-acciones-derecha">';
+                    echo '    <div class="carrito-acciones-total">';
+                    echo '        <p>Total:</p>';
+                    echo '        <p id="total">$3000</p>';
+                    echo '    </div>';
+                }
+                ?>
+                        <?php
+                // Verificar si el usuario está en sesión y mostrar el botón "Comprar ahora"
+                if (isset($_SESSION["email"])) {
+                    echo '<button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>';
+                }else{
+                    echo '<div class="carrito-acciones-derecha">';
+                    echo '    <a href="login.php" class="carrito-acciones-vaciar">Inicia Sesión</a>';
+                    echo '</div>';
+                }
+                ?>
                     </div>
                 </div>
 

@@ -13,34 +13,39 @@ session_start();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    
 </head>
 
 <body>
 
     <div class="wrapper">
 
-        
         <header class="header-mobile">
-            
             <h1 class="logo">Stock X</h1>
             <button class="open-menu" id="open-menu">
                 <i class="bi bi-list"></i>
             </button>
+          
         </header>
         <aside>
             <button class="close-menu" id="close-menu">
                 <i class="bi bi-x"></i>
             </button>
             <header>
-               <h1>Stock X</h1>
-               <div id="mensaje-bienvenida">
-        <?php
-        // Verificar si el usuario está en sesión y mostrar el mensaje
-        if (isset($_SESSION["email"])) {
-            echo "Bienvenido, " . $_SESSION["email"] . ". Estás en sesión.";
-        }
-        ?>
+                <h1>Stock X</h1>
+                <div id="mensaje-bienvenida">
+                <?php
+            // Verificar si el usuario está en sesión y mostrar el mensaje y el botón de cierre de sesión
+            if (isset($_SESSION["email"])) {
+                echo "Bienvenido, " . $_SESSION["email"] . ". Estás en sesión.";
+                echo '<form action="logout.php" method="post">';
+                echo '<button type="submit" title="Cerrar sesión">Cerrar sesión</button>';
+                echo '</form>';
+            } else {
+                // Mostrar botón para iniciar sesión si no está en sesión
+                echo '<a href="login.php">Iniciar sesión</a>';
+            }
+            ?>
+                </div>
             </header>
             <nav>
                 <ul class="menu">
@@ -49,13 +54,13 @@ session_start();
                                 class="bi bi-hand-index-thumb-fill"></i>Stock X</button>
                     </li>
                     <li>
-                        <a href="wilo.html">
+                        <a href="wilo.php?type=sneakers">
                             <button id="abrigos" class="boton-menu boton-categoria">
                                 <i class="bi bi-hand-index-thumb"></i> Sneakers
-                            </button>
+                             </button>
                         </a>
-
                     </li>
+
                     <li>
                         <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
                             Cont Us</button>
@@ -68,7 +73,7 @@ session_start();
         </aside>
         <main>
             <div id="contenedor-productos">
-
+             
             </div>
         </main>
     </div>
@@ -78,10 +83,7 @@ session_start();
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-        </script>
-
-
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./js/main.js"></script>
