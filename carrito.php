@@ -31,23 +31,23 @@ session_start();
             <header>
                 <h1 class="logo">Stock X</h1>
                 <?php
-if (isset($_SESSION["email"])) {
-    // Usuario en sesión
-    echo "Bienvenido, " . $_SESSION["email"] . ". Estás en sesión.";
-    echo '<form action="logout.php" method="post">';
-    echo '<button type="submit" title="Cerrar sesión">Cerrar sesión</button>';
-    echo '</form>';
-} else {
-    // Usuario no en sesión
-    if (isset($_GET["type"]) && $_GET["type"] === "sneakers") {
-        // Mostrar botón de inicio de sesión si no está en sesión y en la página "sneakers"
-        echo '<a href="login.php">Iniciar sesión</a>';
-    } else {
-        // Mostrar botón de inicio de sesión si no está en sesión en otras páginas
-        echo '<a href="login.php">Iniciar sesión</a>';
-    }
-}
-?>
+                if (isset($_SESSION["email"])) {
+                    // Usuario en sesión
+                    echo "Bienvenido, " . $_SESSION["email"] . ". Estás en sesión.";
+                    echo '<form action="logout.php" method="post">';
+                    echo '<button type="submit" title="Cerrar sesión">Cerrar sesión</button>';
+                    echo '</form>';
+                } else {
+                    // Usuario no en sesión
+                    if (isset($_GET["type"]) && $_GET["type"] === "sneakers") {
+                        // Mostrar botón de inicio de sesión si no está en sesión y en la página "sneakers"
+                        echo '<a href="login.php">Iniciar sesión</a>';
+                    } else {
+                        // Mostrar botón de inicio de sesión si no está en sesión en otras páginas
+                        echo '<a href="login.php">Iniciar sesión</a>';
+                    }
+                }
+                ?>
             </header>
             <nav>
                 <ul>
@@ -81,33 +81,33 @@ if (isset($_SESSION["email"])) {
                         <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
                     </div>
                     <?php
-                // Verificar si el usuario está en sesión y mostrar el botón "Comprar ahora"
-                if (isset($_SESSION["email"])) {
-                    echo '<div class="carrito-acciones-derecha">';
-                    echo '    <div class="carrito-acciones-total">';
-                    echo '        <p>Total:</p>';
-                    echo '        <p id="total">$3000</p>';
-                    echo '    </div>';
-                }
-                ?>
-                        <?php
-                // Verificar si el usuario está en sesión y mostrar el botón "Comprar ahora"
-                if (isset($_SESSION["email"])) {
-                    echo '<button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>';
-                }else{
-                    echo '<div class="carrito-acciones-derecha">';
-                    echo '    <a href="login.php" class="carrito-acciones-vaciar">Inicia Sesión</a>';
-                    echo '</div>';
-                }
-                ?>
-                    </div>
+                    // Verificar si el usuario está en sesión y mostrar el botón "Comprar ahora"
+                    if (isset($_SESSION["email"])) {
+                        echo '<div class="carrito-acciones-derecha">';
+                        echo '    <div class="carrito-acciones-total">';
+                        echo '        <p>Total:</p>';
+                        echo '        <p id="total">$3000</p>';
+                        echo '    </div>';
+                    }
+                    ?>
+                    <?php
+                    // Verificar si el usuario está en sesión y mostrar el botón "Comprar ahora"
+                    if (isset($_SESSION["email"])) {
+                        echo '<button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>';
+                    } else {
+                        echo '<div class="carrito-acciones-derecha">';
+                        echo '    <a href="login.php" class="carrito-acciones-vaciar">Inicia Sesión</a>';
+                        echo '</div>';
+                    }
+                    ?>
                 </div>
-
-                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i
-                        class="bi bi-emoji-laughing"></i></p>
-
             </div>
-        </main>
+
+            <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i
+                    class="bi bi-emoji-laughing"></i></p>
+
+    </div>
+    </main>
     </div>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>

@@ -28,28 +28,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])) {
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap">
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="./css/main.css">
     <style>
-        .wrapper2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: var(--clr-main);
-}
-.error-message {
+    .wrapper2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: var(--clr-main);
+    }
+
+    .error-message {
         color: red;
         font-weight: bold;
     }
     </style>
 </head>
+
 <body>
     <div class="wrapper2">
         <aside> </aside>
@@ -58,11 +62,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])) {
             <form method="POST" action="login.php" class="formulario-login">
                 <div class="mb-3">
                     <label for="email" class="form-label">Correo electrónico</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required>
+                    <input type="email" name="email" class="form-control" id="email"
+                        placeholder="Ingrese su correo electrónico" required>
                 </div>
-            <div class="mb-3">
-             <label for="password" class="form-label">Contraseña</label>
-             <input type="password" name="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" name="password" class="form-control" id="password"
+                        placeholder="Ingrese su contraseña" required>
                 </div>
                 <button type="submit" name="login" class="producto-agregar boton-login">Iniciar sesión</button>
             </form>
@@ -75,6 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])) {
         </main>
     </div>
 </body>
+
 </html>
 
 
@@ -85,10 +92,10 @@ if (isset($loginError)) {
 ?>
 
 <script>
-    <?php if (isset($loginError)) : ?>
-        $(document).ready(function () {
-            $('#errorModal').modal('show');
-            $('.error-message').css('color', 'red'); 
-        });
-    <?php endif; ?>
+<?php if (isset($loginError)): ?>
+$(document).ready(function() {
+    $('#errorModal').modal('show');
+    $('.error-message').css('color', 'red');
+});
+<?php endif; ?>
 </script>

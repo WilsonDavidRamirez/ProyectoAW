@@ -37,49 +37,57 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register"])) {
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap">
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="./css/main.css">
     <style>
-        .wrapper2 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: var(--clr-main);
-        }
-        .error-message {
-            color: red;
-            font-weight: bold;
-        }
+    .wrapper2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: var(--clr-main);
+    }
+
+    .error-message {
+        color: red;
+        font-weight: bold;
+    }
     </style>
 </head>
+
 <body>
     <div class="wrapper2">
         <aside> </aside>
         <main>
             <h1 class="titulo-principal text-center">Stock X</h1>
             <form method="POST" action="registrate.php" class="formulario-login">
-                 <div class="mb-3">
+                <div class="mb-3">
                     <label for="email" class="form-label">Correo electrónico</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required>
+                    <input type="email" name="email" class="form-control" id="email"
+                        placeholder="Ingrese su correo electrónico" required>
                 </div>
                 <div class="mb-3">
                     <label for="first_name" class="form-label">Nombre</label>
-                    <input type="text" name="first_name" class="form-control" id="first_name" placeholder="Ingrese su nombre" required>
+                    <input type="text" name="first_name" class="form-control" id="first_name"
+                        placeholder="Ingrese su nombre" required>
                 </div>
                 <div class="mb-3">
                     <label for="last_name" class="form-label">Apellido</label>
-                    <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Ingrese su apellido" required>
+                    <input type="text" name="last_name" class="form-control" id="last_name"
+                        placeholder="Ingrese su apellido" required>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" name="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+                    <input type="password" name="password" class="form-control" id="password"
+                        placeholder="Ingrese su contraseña" required>
                 </div>
                 <button type="submit" name="register" class="producto-agregar boton-login">Registrarse</button>
             </form>
@@ -92,4 +100,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register"])) {
         </main>
     </div>
 </body>
+
 </html>

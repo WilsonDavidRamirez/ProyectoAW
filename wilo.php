@@ -31,25 +31,25 @@ session_start();
             <header>
                 <h1 class="logo">Stock X</h1>
                 <?php
-if (isset($_SESSION["email"])) {
-    // Usuario en sesión
-    echo "Bienvenido, " . $_SESSION["email"] . ". Estás en sesión.";
-    echo '<form action="logout.php" method="post">';
-    echo '<button type="submit" title="Cerrar sesión">Cerrar sesión</button>';
-    echo '</form>';
-} else {
-    // Usuario no en sesión
-    if (isset($_GET["type"]) && $_GET["type"] === "sneakers") {
-        // Mostrar botón de inicio de sesión si no está en sesión y en la página "sneakers"
-        echo '<a href="login.php">Iniciar sesión</a>';
-    } else {
-        // Mostrar botón de inicio de sesión si no está en sesión en otras páginas
-        echo '<a href="login.php">Iniciar sesión</a>';
-    }
-}
-?>
+                if (isset($_SESSION["email"])) {
+                    // Usuario en sesión
+                    echo "Bienvenido, " . $_SESSION["email"] . ". Estás en sesión.";
+                    echo '<form action="logout.php" method="post">';
+                    echo '<button type="submit" title="Cerrar sesión">Cerrar sesión</button>';
+                    echo '</form>';
+                } else {
+                    // Usuario no en sesión
+                    if (isset($_GET["type"]) && $_GET["type"] === "sneakers") {
+                        // Mostrar botón de inicio de sesión si no está en sesión y en la página "sneakers"
+                        echo '<a href="login.php">Iniciar sesión</a>';
+                    } else {
+                        // Mostrar botón de inicio de sesión si no está en sesión en otras páginas
+                        echo '<a href="login.php">Iniciar sesión</a>';
+                    }
+                }
+                ?>
 
-             
+
             </header>
             <nav>
                 <ul class="menu">
@@ -85,9 +85,9 @@ if (isset($_SESSION["email"])) {
             </footer>
         </aside>
         <main>
-        <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
             <div id="contenedor-productos" class="contenedor-productos">
-              
+
         </main>
     </div>
 
