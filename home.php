@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -30,24 +34,13 @@
             </button>
             <header>
                <h1>Stock X</h1>
-               <div id="mensaje-bienvenida"></div>
-               
-
-               <script>
-               // Verificar si la cookie con el mensaje de bienvenida existe
-               var mensaje = getCookie("welcome_message");
-               if (mensaje) {
-                   var mensajeBienvenida = document.getElementById("mensaje-bienvenida");
-                   mensajeBienvenida.textContent = mensaje;
-               }
-           
-               // Función para obtener el valor de una cookie por su nombre
-               function getCookie(name) {
-                   var value = "; " + document.cookie;
-                   var parts = value.split("; " + name + "=");
-                   if (parts.length === 2) return parts.pop().split(";").shift();
-               }
-               </script>
+               <div id="mensaje-bienvenida">
+        <?php
+        // Verificar si el usuario está en sesión y mostrar el mensaje
+        if (isset($_SESSION["email"])) {
+            echo "Bienvenido, " . $_SESSION["email"] . ". Estás en sesión.";
+        }
+        ?>
             </header>
             <nav>
                 <ul class="menu">

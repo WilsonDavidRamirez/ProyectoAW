@@ -1,4 +1,9 @@
 <?php
+// Configurar el tiempo de vida de la sesión en segundos (30 minutos)
+$session_duration = 30 * 60; // 30 minutos en segundos
+
+// Iniciar sesión con la configuración de tiempo de vida
+session_set_cookie_params($session_duration);
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])) {
@@ -14,11 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])) {
             $_SESSION["first_name"] = $firstName;
             $_SESSION["last_name"] = $lastName;
 
-            // Crear una cookie con el mensaje de bienvenida
-            $mensaje = "Bienvenido, " . $_SESSION["email"];
-            setcookie("welcome_message", $mensaje, time() + 60, "/"); // Cookie válida por 1 minuto
-
-            header("Location: home.html");
+            header("Location: home.php");
             exit;
         }
     }
