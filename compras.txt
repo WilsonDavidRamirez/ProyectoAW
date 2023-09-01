@@ -1,0 +1,3 @@
+Correo: wdrs@ggg.com
+Detalles de la compra: [{"titulo":"Zapatillas Tenis","cantidad":2},{"titulo":"Mocasines","cantidad":2}]
+
