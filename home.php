@@ -15,7 +15,7 @@ session_start();
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    
+
     <link rel="stylesheet" href="./css/Count_Us.css" />
 
 </head>
@@ -49,14 +49,14 @@ session_start();
                     } else {
                         echo '<p><a href="login.php" class="btnContact" style="text-decoration:none;">Login</a></p>';
                         echo '<br>';
-                        echo '<p><a href="registrate.php" class="btnContact  "style="text-decoration:none;">Registrarse</a></p>';
+                        echo '<p><a href="registrate.php" class="btnContact  "style="text-decoration:none;">Register</a></p>';
                     }
                     ?>
                 </div>
             </header>
             <br>
             <br>
-      
+
             <nav>
                 <ul class="menu">
                     <li>

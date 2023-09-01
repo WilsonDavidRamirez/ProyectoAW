@@ -13,3 +13,9 @@ Detalles de la compra: [{"titulo":"Zapatillas Tenis","cantidad":1}]
 Correo: emilse@gmail.com
 Detalles de la compra: [{"titulo":"Zapatillas Tenis","cantidad":1}]
 
+email: nicole@gmail.com
+Purchase details: [{"titulo":"Mocasines Mujer","cantidad":1},{"titulo":"Zapatillas Tenis","cantidad":1},{"titulo":"Vans","cantidad":1}]
+
+email: nicole@gmail.com
+Purchase details: [{"titulo":"Zapatillas Tenis","cantidad":1},{"titulo":"Mocasines Mujer","cantidad":1},{"titulo":"VenAir ","cantidad":1}]
+

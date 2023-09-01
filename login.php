@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])) {
             exit;
         }
     }
-    $loginError = "<span class='error-message'>Usuario o contraseña incorrecta</span>";
+    $loginError = "<span class='error-message'>Incorrect username or password</span>";
 }
 ?>
 <!DOCTYPE html>
@@ -41,21 +41,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])) {
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="./css/main.css">
     <style>
-    @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 
-    .wrapper2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background-color: var(--clr-main);
-        font-family: "Rubik", sans-serif;
-    }
+        .wrapper2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--clr-main);
+            font-family: "Rubik", sans-serif;
+        }
 
-    .error-message {
-        color: red;
-        font-weight: bold;
-    }
+        .error-message {
+            color: red;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -66,21 +66,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])) {
             <h1 class="titulo-principal text-center">Stock X</h1>
             <form method="POST" action="login.php" class="formulario-login">
                 <div class="mb-3">
-                    <label for="email" class="form-label">Correo electrónico</label>
-                    <input type="email" name="email" class="form-control" id="email"
-                        placeholder="Ingrese su correo electrónico" required>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Register *" required>
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" name="password" class="form-control" id="password"
-                        placeholder="Ingrese su contraseña" required>
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="Password *"
+                        required>
                 </div>
                 <center>
-                    <button type="submit" name="login" class="producto-agregar boton-login">Iniciar sesión</button>
+                    <button type="submit" name="login" class="producto-agregar boton-login">Sing in</button>
                 </center>
             </form>
 
-            <center><a href="registrate.php" class="btn producto-agregar">Registrarse</a></center>
+            <center><a href="registrate.php" class="btn producto-agregar">Register</a></center>
             <?php
             if (isset($loginError)) {
                 echo "<p class='error'>$loginError</p>";
@@ -100,10 +99,10 @@ if (isset($loginError)) {
 ?>
 
 <script>
-<?php if (isset($loginError)): ?>
-$(document).ready(function() {
-    $('#errorModal').modal('show');
-    $('.error-message').css('color', 'red');
-});
-<?php endif; ?>
+    <?php if (isset($loginError)): ?>
+        $(document).ready(function () {
+            $('#errorModal').modal('show');
+            $('.error-message').css('color', 'red');
+        });
+    <?php endif; ?>
 </script>

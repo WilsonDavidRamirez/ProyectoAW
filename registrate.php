@@ -72,35 +72,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register"])) {
             <h1 class="titulo-principal text-center">Stock X</h1>
             <form method="POST" action="registrate.php" class="formulario-login">
                 <div class="mb-3">
-                    <label for="email" class="form-label">Correo electrónico</label>
-                    <input type="email" name="email" class="form-control" id="email"
-                        placeholder="Ingrese su correo electrónico" required>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Email *" required>
                 </div>
                 <div class="mb-3">
-                    <label for="first_name" class="form-label">Nombre</label>
-                    <input type="text" name="first_name" class="form-control" id="first_name"
-                        placeholder="Ingrese su nombre" required>
+                    <label for="first_name" class="form-label">Name</label>
+                    <input type="text" name="first_name" class="form-control" id="first_name" placeholder="Name *"
+                        required>
                 </div>
                 <div class="mb-3">
-                    <label for="last_name" class="form-label">Apellido</label>
-                    <input type="text" name="last_name" class="form-control" id="last_name"
-                        placeholder="Ingrese su apellido" required>
+                    <label for="last_name" class="form-label">Last Name</label>
+                    <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Last Name *"
+                        required>
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" name="password" class="form-control" id="password"
-                        placeholder="Ingrese su contraseña" required>
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="Password *"
+                        required>
                 </div>
                 <center>
-                    <button type="submit" name="register" class="producto-agregar boton-login">Registrarse</button>
+                    <button type="submit" name="register" class="producto-agregar boton-login">Register</button>
                 </center>
             </form>
             <center>
-                <a href="login.php" class="btn producto-agregar">Iniciar Sesión</a>
+                <a href="login.php" class="btn producto-agregar">Sing in</a>
             </center>
             <?php
             if (!empty($registrationMessage)) {
                 echo "<p class='registration-message'>$registrationMessage</p>";
+                header("Location: login.php");
             }
             ?>
         </main>

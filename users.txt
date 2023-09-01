@@ -1,2 +1,7 @@
 emilse@gmail.com:Emilse:asad:$2y$10$dSDdttHnhbvo2htHpomad.bAV4u4b3itm1VZ0gG/Yfs03AVzGAEga
 david@espe:david:david:$2y$10$DDpIom6PI2BiwRalbe9tIeeEwmJLlkxjcTjLvhLTObekHs25nDrMG
+kevin@gmail.com:aaa:aaa:$2y$10$YSI7P9g49WsYu2osOTiGWe8HPZEyzysRFU4/PjddIgu.sb.RnPZcy
+aaa@gmail.com:aaa:aaa:$2y$10$ht78.IdOoRo969TgpEf5DuGKbEEL7GjbyOQdf5zPuIJrKZqB/fAbC
+nicole@gmail.com:Nicole:Diaz:$2y$10$nN4TfrI6h07iSymW.SJcn.5nEDpOYkYHi88ObwhkYkX8ZWwT0duwG
+seb@gmail.com:asa:asad:$2y$10$rIMBqF.SXu9SbSGrNdJ29OPg6kkfNeocq/KoF8ex2YqFAPJSU85ia
+bb@g:asda:asda:$2y$10$0iI64XRgJQU9.Mey28FWmO1Uw1Kwd9gEchQ2Wl8KPehwDkrgTCQ3O

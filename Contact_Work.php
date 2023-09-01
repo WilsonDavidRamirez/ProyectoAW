@@ -48,12 +48,12 @@ session_start();
                         // Mostrar botón para iniciar sesión si no está en sesión
                         echo '<p><a href="login.php" class="btnContact" style="text-decoration:none;">Login</a></p>';
                         echo '<br>';
-                        echo '<p><a href="registrate.php" class="btnContact  "style="text-decoration:none;">Registrarse</a></p>';
+                        echo '<p><a href="registrate.php" class="btnContact  "style="text-decoration:none;">Register</a></p>';
                     }
                     ?>
                 </div>
             </header>
-            <br> <br> <br> 
+            <br> <br> <br>
             <nav>
                 <ul class="menu">
                     <li>
@@ -201,11 +201,11 @@ session_start();
                                     </div>
 
                                     <script>
-                                    function updateFileNameDisplay(input) {
-                                        const fileName = input.files[0].name;
-                                        const fileLabel = document.getElementById('cv-label');
-                                        fileLabel.textContent = fileName;
-                                    }
+                                        function updateFileNameDisplay(input) {
+                                            const fileName = input.files[0].name;
+                                            const fileLabel = document.getElementById('cv-label');
+                                            fileLabel.textContent = fileName;
+                                        }
                                     </script>
 
                                     <div class="col-sm-12 mb-3 center-button">
