@@ -4,8 +4,8 @@
         "titulo": "Zapatillas Tenis",
         "imagen": "./img/Casuales/01.jpg",
         "categoria": {
-            "nombre": "Casuales",
-            "id": "casuales"
+            "nombre": "Casual",
+            "id": "casual"
         },
         "precio": 100
     },
@@ -14,8 +14,8 @@
         "titulo": "Mocasines",
         "imagen": "./img/Casuales/02.jpg",
         "categoria": {
-            "nombre": "Casuales",
-            "id": "casuales"
+            "nombre": "Casual",
+            "id": "casual"
         },
         "precio": 150
     },
@@ -24,8 +24,8 @@
         "titulo": "Mocasines Mujer",
         "imagen": "./img/Casuales/03.jpg",
         "categoria": {
-            "nombre": "Casuales",
-            "id": "casuales"
+            "nombre": "Casual",
+            "id": "casual"
         },
         "precio": 40
     },
@@ -34,8 +34,8 @@
         "titulo": "Botines",
         "imagen": "./img/Casuales/04.jpg",
         "categoria": {
-            "nombre": "Casuales",
-            "id": "casuales"
+            "nombre": "Casual",
+            "id": "casual"
         },
         "precio": 50
     },
@@ -44,8 +44,8 @@
         "titulo": "Vans",
         "imagen": "./img/Casuales/05.jpg",
         "categoria": {
-            "nombre": "Casuales",
-            "id": "casuales"
+            "nombre": "Casual",
+            "id": "casual"
         },
         "precio": 70
     },
@@ -54,8 +54,8 @@
         "titulo": "Botines Negro",
         "imagen": "./img/Casuales/06.jpg",
         "categoria": {
-            "nombre": "Casuales",
-            "id": "casuales"
+            "nombre": "Casual",
+            "id": "casual"
         },
         "precio": 80
     },
@@ -64,8 +64,8 @@
         "titulo": "Concur",
         "imagen": "./img/Deportivos/01.jpg",
         "categoria": {
-            "nombre": "Deportivos",
-            "id": "deportivos"
+            "nombre": "Sporting",
+            "id": "sporting"
         },
         "precio": 100
     },
@@ -74,8 +74,8 @@
         "titulo": "VenAir ",
         "imagen": "./img/Deportivos/02.jpg",
         "categoria": {
-            "nombre": "Deportivos",
-            "id": "deportivos"
+            "nombre": "Sporting",
+            "id": "sporting"
         },
         "precio": 150
     },
@@ -84,8 +84,8 @@
         "titulo": "Run Gray",
         "imagen": "./img/Deportivos/03.jpg",
         "categoria": {
-            "nombre": "Deportivos",
-            "id": "deportivos"
+            "nombre": "Sporting",
+            "id": "sporting"
         },
         "precio": 40
     },
@@ -94,8 +94,8 @@
         "titulo": "Sneakers",
         "imagen": "./img/Deportivos/04.jpg",
         "categoria": {
-            "nombre": "Deportivos",
-            "id": "deportivos"
+            "nombre": "Sporting",
+            "id": "sporting"
         },
         "precio": 50
     },
@@ -104,8 +104,8 @@
         "titulo": "Ventura",
         "imagen": "./img/Deportivos/05.jpg",
         "categoria": {
-            "nombre": "Deportivos",
-            "id": "deportivos"
+            "nombre": "Sporting",
+            "id": "sporting"
         },
         "precio": 70
     },
@@ -114,8 +114,8 @@
         "titulo": "Lance ",
         "imagen": "./img/Deportivos/06.jpg",
         "categoria": {
-            "nombre": "Deportivos",
-            "id": "deportivos"
+            "nombre": "Sporting",
+            "id": "sporting"
         },
         "precio": 80
     },
@@ -124,8 +124,8 @@
         "titulo": "Wing Tip",
         "imagen": "./img/Formales/05.jpg",
         "categoria": {
-            "nombre": "Formales",
-            "id": "formales"
+            "nombre": "Formals",
+            "id": "formals"
         },
         "precio": 70
     },
@@ -134,8 +134,8 @@
         "titulo": "Derby",
         "imagen": "./img/Formales/06.jpg",
         "categoria": {
-            "nombre": "Formales",
-            "id": "formales"
+            "nombre": "Formals",
+            "id": "formals"
         },
         "precio": 80
     },
@@ -144,8 +144,8 @@
         "titulo": "Loafer",
         "imagen": "./img/Formales/01.jpg",
         "categoria": {
-            "nombre": "Formales",
-            "id": "formales"
+            "nombre": "Formals",
+            "id": "formals"
         },
         "precio": 100
     },
@@ -154,8 +154,8 @@
         "titulo": "Desert",
         "imagen": "./img/Formales/02.jpg",
         "categoria": {
-            "nombre": "Formales",
-            "id": "formales"
+            "nombre": "Formals",
+            "id": "formals"
         },
         "precio": 150
     },
@@ -164,8 +164,8 @@
         "titulo": "Brogue",
         "imagen": "./img/Formales/03.jpg",
         "categoria": {
-            "nombre": "Formales",
-            "id": "formales"
+            "nombre": "Formals",
+            "id": "formals"
         },
         "precio": 40
     },
@@ -174,8 +174,8 @@
         "titulo": "Monk Strap",
         "imagen": "./img/Formales/04.jpg",
         "categoria": {
-            "nombre": "Formales",
-            "id": "formales"
+            "nombre": "Formals",
+            "id": "formals"
         },
         "precio": 50
     }
