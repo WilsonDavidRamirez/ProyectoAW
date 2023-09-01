@@ -52,7 +52,7 @@ session_start();
                     ?>
                 </div>
             </header>
-             <br> <br> <br> <br> <br>
+            <br> <br> <br> <br> <br>
             <nav>
                 <ul class="menu">
                     <li>
@@ -190,7 +190,6 @@ session_start();
                                     </div>
                                     <div class="col-sm-6 mb-3">
                                         <div class="form-group">
-                                            <label for="cv">Update CV</label>
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="cv" name="cv"
                                                     accept="application/pdf" onchange="updateFileNameDisplay(this)">

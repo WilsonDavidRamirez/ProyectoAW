@@ -16,7 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         mkdir($folderPath, 0755, true);
     }
 
-    // Manejar el archivo adjunto
     if (isset($_FILES['selectedFile'])) {
         $file = $_FILES['selectedFile'];
         $file_path = $folderPath . "/" . $file['name'];
