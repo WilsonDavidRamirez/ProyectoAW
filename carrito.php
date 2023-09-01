@@ -61,12 +61,12 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
                 <ul>
                     <li>
                         <a class="boton-menu boton-volver" href="./Productos.php">
-                            <i class="bi bi-arrow-return-left"></i> Seguir comprando
+                            <i class="bi bi-arrow-return-left"></i> Continue shopping
                         </a>
                     </li>
                     <li>
                         <a class="boton-menu boton-carrito active" href="./carrito.php">
-                            <i class="bi bi-cart-fill"></i> Carrito
+                            <i class="bi bi-cart-fill"></i> Shopping cart
                         </a>
                     </li>
                 </ul>
@@ -76,9 +76,9 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
             </footer>
         </aside>
         <main>
-            <h2 class="titulo-principal">Carrito</h2>
+            <h2 class="titulo-principal">Shopping cart</h2>
             <div class="contenedor-carrito">
-                <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <i class="bi bi-emoji-frown"></i></p>
+                <p id="carrito-vacio" class="carrito-vacio">Your shopping cart is empty. <i class="bi bi-emoji-frown"></i></p>
 
                 <div id="carrito-productos" class="carrito-productos disabled">
                     <!-- Esto se va a completar con el JS -->
@@ -86,7 +86,7 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
 
                 <div id="carrito-acciones" class="carrito-acciones disabled">
                     <div class="carrito-acciones-izquierda">
-                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Empty cart</button>
                     </div>
                     <?php
                     // Verificar si el usuario está en sesión y mostrar el botón "Comprar ahora"
@@ -111,7 +111,7 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
                 </div>
             </div>
 
-            <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i
+            <p id="carrito-comprado" class="carrito-comprado disabled">Thank you very much for your purchase. <i
                     class="bi bi-emoji-laughing"></i></p>
 
     </div>
