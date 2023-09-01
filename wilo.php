@@ -97,6 +97,7 @@ session_start();
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
     <script src="./js/mainWilo.js"></script>
     <script src="./js/menu.js"></script>
 </body>

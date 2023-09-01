@@ -1,169 +1,76 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("contacUS");
-  form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Evita que el formulario se envíe normalmente
+$(document).ready(function () {
+  $("#btnSubmit").click(function (event) {
+    var firstName = $("#firstName").val();
+    var lastName = $("#lastName").val();
+    var email = $("#email").val();
+    var phone = $("#phone").val();
+    var message = $("#message").val();
 
-    const firstName = document.getElementById("firstName").value;
-    const lastName = document.getElementById("lastName").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const message = document.getElementById("message").value;
-
-    const messageContent = `
-                First Name: ${firstName}
-                Last Name: ${lastName}
-                Email: ${email}
-                Phone Number: ${phone}
-                Message: ${message}
-            `;
-
-    alert(messageContent); // Muestra los datos en un alert
-  });
-});
-
-/*
-
-jQuery.validator.addMethod(
-  "lettersonly",
-  function (value, element) {
-    return this.optional(element) || /^[a-z]+$/i.test(value);
-  },
-  "Enter only letters"
-);
-
-jQuery.validator.addMethod(
-  "startsWith09",
-  function (value, element) {
-    return this.optional(element) || /^09/.test(value);
-  },
-  'Phone number should start with "09".'
-);
-
-$(function () {
-  $("form[name='contacUS']").validate({
-    rules: {
-      firstName: {
-        required: true,
-        minlength: 3,
-        maxlength: 50,
-        lettersonly: true,
-      },
-
-      lastName: {
-        required: true,
-        minlength: 3,
-        maxlength: 50,
-        lettersonly: true,
-      },
-
-      phone: {
-        required: true,
-        minlength: 10,
-        maxlength: 10,
-        startsWith09: true,
-      },
-
-      email: {
-        required: true,
-        //validemail: true,
-      },
-      message: {
-        required: true,
-      },
-    },
-    // Mensajes especificos de error de validacion
-    messages: {
-      firstName: {
-        required: "Enter your name",
-      },
-      lastName: {
-        required: "Enter your last name",
-      },
-      phone: {
-        required: "Please enter your mobile number",
-        minlength: "Your mobile number must be 10 digits long",
-        maxlength: "Your mobile number must be 10 digits long",
-      },
-      email: {
-        required: "Please enter an email address",
-      },
-      message: {
-        required: "Write your message",
-      },
-    },
-    submitHandler: function (form) {
-      $("#exampleModal").modal("show");
-      $("#exampleModal").on("hidden.bs.modal", function () {
-        form.submit();
+    if (firstName.length < 3) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "First Name must have at least 3 characters.",
       });
-    },
-  });
-});
+      return false;
+    }
 
-$(function () {
-  $("form[name='work']").validate({
-    rules: {
-      txtName: {
-        required: true,
-        minlength: 3,
-        maxlength: 50,
-        lettersonly: true,
-      },
-      txtPhone: {
-        required: true,
-        minlength: 10,
-        maxlength: 10,
-        startsWith09: true,
-      },
-      txtEmail: {
-        required: true,
-        validemail: true,
-      },
-      txtCity: {
-        required: true,
-        minlength: 3,
-        maxlength: 50,
-        lettersonly: true,
-      },
-      txtAddress: {
-        required: true,
-        minlength: 3,
-        maxlength: 50,
-      },
-      cv: {
-        required: true,
-      },
-    },
-    // Mensajes especificos de error de validacion
-    messages: {
-      firstName: {
-        required: "Enter your name",
-      },
-      txtPhone: {
-        required: "Please enter your mobile number",
-        minlength: "Your mobile number must be 10 digits long",
-        maxlength: "Your mobile number must be 10 digits long",
-      },
-      txtEmail: {
-        required: "Please enter an email address",
-      },
-      txtCity: {
-        required: "Enter your City",
-      },
-      txtAddress: {
-        required: "Enter your Address",
-      },
-      cv: {
-        required: "The Curriculum is necessary",
-      },
-    },
-    submitHandler: function (form) {
-      $("#exampleModal").modal("show");
-      $("#exampleModal").on("hidden.bs.modal", function () {
-        form.submit();
+    if (lastName.length < 3) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Last Name must have at least 3 characters.",
       });
-    },
+      return false;
+    }
+
+    if (!email.includes("@")) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Email must contain @ symbol.",
+      });
+      return false;
+    }
+
+    if (!phone.startsWith("09") || phone.length !== 10) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Phone Number must start with 09 and have 10 digits.",
+      });
+      return false;
+    }
+
+    var messageLength = message.trim().length;
+    if (messageLength < 10 || messageLength > 250) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Message must have between 10 and 250 characters.",
+      });
+      return false;
+    }
+
+    $.ajax({
+      data: {
+        PNombre: firstName,
+        SNombre: lastName,
+        Email: email,
+        Telefono: phone,
+        Mensaje: message,
+      },
+      url: "./php/Contact_Us.php",
+      type: "post",
+      dataType: "json",
+      success: function (response) {
+        Swal.fire("Success!", response.Resultado, "success");
+      },
+      error: function (error) {
+        Swal.fire("Error!", "An error occurred.", "error");
+      },
+    });
+
+    return true;
   });
 });
-
-*/
