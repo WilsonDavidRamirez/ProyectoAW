@@ -52,7 +52,7 @@ session_start();
             <nav>
                 <ul>
                     <li>
-                        <a class="boton-menu boton-volver" href="./wilo.php">
+                        <a class="boton-menu boton-volver" href="./Productos.php">
                             <i class="bi bi-arrow-return-left"></i> Seguir comprando
                         </a>
                     </li>

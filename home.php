@@ -55,7 +55,7 @@ session_start();
                                 class="bi bi-hand-index-thumb-fill"></i>Stock X</button>
                     </li>
                     <li>
-                        <a href="wilo.php?type=sneakers">
+                        <a href="Productos.php?type=sneakers">
                             <button id="abrigos" class="boton-menu boton-categoria">
                                 <i class="bi bi-hand-index-thumb"></i> Sneakers
                             </button>

@@ -1,62 +1,182 @@
 [
     {
-        "id": "3",
-        "titulo": "Abrigito",
-        "imagen": "./img/abrigos/01.jpg",
+        "id": "1",
+        "titulo": "Zapatillas Tenis",
+        "imagen": "./img/Casuales/01.jpg",
         "categoria": {
-            "nombre": "Abrigos",
-            "id": "abrigos"
+            "nombre": "Casuales",
+            "id": "casuales"
         },
         "precio": 100
     },
     {
-        "id": "4",
-        "titulo": "Abrigito Acojedor",
-        "imagen": "./img/abrigos/02.jpg",
+        "id": "2",
+        "titulo": "Mocasines",
+        "imagen": "./img/Casuales/02.jpg",
         "categoria": {
-            "nombre": "Abrigos",
-            "id": "abrigos"
+            "nombre": "Casuales",
+            "id": "casuales"
         },
         "precio": 150
     },
     {
-        "id": "1",
-        "titulo": "Camisita",
-        "imagen": "./img/camisetas/01.jpg",
+        "id": "3",
+        "titulo": "Mocasines Mujer",
+        "imagen": "./img/Casuales/03.jpg",
         "categoria": {
-            "nombre": "Camisetas",
-            "id": "camisetas"
+            "nombre": "Casuales",
+            "id": "casuales"
         },
         "precio": 40
     },
     {
-        "id": "2",
-        "titulo": "Camisita Blanca",
-        "imagen": "./img/camisetas/02.jpg",
+        "id": "4",
+        "titulo": "Botines",
+        "imagen": "./img/Casuales/04.jpg",
         "categoria": {
-            "nombre": "Camisetas",
-            "id": "camisetas"
+            "nombre": "Casuales",
+            "id": "casuales"
         },
         "precio": 50
     },
     {
-        "id": "4",
-        "titulo": "Pantalonsito",
-        "imagen": "./img/pantalones/01.jpg",
+        "id": "5",
+        "titulo": "Vans",
+        "imagen": "./img/Casuales/05.jpg",
         "categoria": {
-            "nombre": "Pantalones",
-            "id": "pantalones"
+            "nombre": "Casuales",
+            "id": "casuales"
         },
         "precio": 70
     },
     {
-        "id": "5",
-        "titulo": "Pantalonsito Negro",
-        "imagen": "./img/pantalones/03.jpg",
+        "id": "6",
+        "titulo": "Botines Negro",
+        "imagen": "./img/Casuales/06.jpg",
         "categoria": {
-            "nombre": "Pantalones",
-            "id": "pantalones"
+            "nombre": "Casuales",
+            "id": "casuales"
         },
         "precio": 80
+    },
+    {
+        "id": "7",
+        "titulo": "Concur",
+        "imagen": "./img/Deportivos/01.jpg",
+        "categoria": {
+            "nombre": "Deportivos",
+            "id": "deportivos"
+        },
+        "precio": 100
+    },
+    {
+        "id": "8",
+        "titulo": "VenAir ",
+        "imagen": "./img/Deportivos/02.jpg",
+        "categoria": {
+            "nombre": "Deportivos",
+            "id": "deportivos"
+        },
+        "precio": 150
+    },
+    {
+        "id": "9",
+        "titulo": "Run Gray",
+        "imagen": "./img/Deportivos/03.jpg",
+        "categoria": {
+            "nombre": "Deportivos",
+            "id": "deportivos"
+        },
+        "precio": 40
+    },
+    {
+        "id": "10",
+        "titulo": "Sneakers",
+        "imagen": "./img/Deportivos/04.jpg",
+        "categoria": {
+            "nombre": "Deportivos",
+            "id": "deportivos"
+        },
+        "precio": 50
+    },
+    {
+        "id": "11",
+        "titulo": "Ventura",
+        "imagen": "./img/Deportivos/05.jpg",
+        "categoria": {
+            "nombre": "Deportivos",
+            "id": "deportivos"
+        },
+        "precio": 70
+    },
+    {
+        "id": "12",
+        "titulo": "Lance ",
+        "imagen": "./img/Deportivos/06.jpg",
+        "categoria": {
+            "nombre": "Deportivos",
+            "id": "deportivos"
+        },
+        "precio": 80
+    },
+    {
+        "id": "13",
+        "titulo": "Wing Tip",
+        "imagen": "./img/Formales/05.jpg",
+        "categoria": {
+            "nombre": "Formales",
+            "id": "formales"
+        },
+        "precio": 70
+    },
+    {
+        "id": "14",
+        "titulo": "Derby",
+        "imagen": "./img/Formales/06.jpg",
+        "categoria": {
+            "nombre": "Formales",
+            "id": "formales"
+        },
+        "precio": 80
+    },
+    {
+        "id": "15",
+        "titulo": "Loafer",
+        "imagen": "./img/Formales/01.jpg",
+        "categoria": {
+            "nombre": "Formales",
+            "id": "formales"
+        },
+        "precio": 100
+    },
+    {
+        "id": "16",
+        "titulo": "Desert",
+        "imagen": "./img/Formales/02.jpg",
+        "categoria": {
+            "nombre": "Formales",
+            "id": "formales"
+        },
+        "precio": 150
+    },
+    {
+        "id": "17",
+        "titulo": "Brogue",
+        "imagen": "./img/Formales/03.jpg",
+        "categoria": {
+            "nombre": "Formales",
+            "id": "formales"
+        },
+        "precio": 40
+    },
+    {
+        "id": "18",
+        "titulo": "Monk Strap",
+        "imagen": "./img/Formales/04.jpg",
+        "categoria": {
+            "nombre": "Formales",
+            "id": "formales"
+        },
+        "precio": 50
     }
 ]

@@ -58,16 +58,17 @@ session_start();
                                 class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
                     </li>
                     <li>
-                        <button id="abrigos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
-                            Abrigos</button>
+                        <button id="casuales" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
+                            Casuales</button>
                     </li>
                     <li>
-                        <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
-                            Camisetas</button>
+                        <button id="deportivos" class="boton-menu boton-categoria"><i
+                                class="bi bi-hand-index-thumb"></i>
+                            Deportivos</button>
                     </li>
                     <li>
-                        <button id="pantalones" class="boton-menu boton-categoria"><i
-                                class="bi bi-hand-index-thumb"></i> Pantalones</button>
+                        <button id="formales" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
+                            Formales</button>
                     </li>
                     <li>
                         <a class="boton-menu boton-carrito" href="./carrito.php">
@@ -97,8 +98,7 @@ session_start();
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-
-    <script src="./js/mainWilo.js"></script>
+    <script src="./js/Productos.js"></script>
     <script src="./js/menu.js"></script>
 </body>
 

@@ -152,9 +152,14 @@ main {
   margin-bottom: 2rem;
 }
 
+.producto{
+  border: solid black 2px;
+  border-radius: 10px
+}
+
 .contenedor-productos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
@@ -167,7 +172,7 @@ main {
   background-color: var(--clr-main);
   color: var(--clr-white);
   padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 8px;
   margin-top: -2rem;
   position: relative;
   display: flex;
