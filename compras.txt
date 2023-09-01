@@ -1,3 +1,9 @@
 Correo: wdrs@ggg.com
 Detalles de la compra: [{"titulo":"Zapatillas Tenis","cantidad":2},{"titulo":"Mocasines","cantidad":2}]
 
+Correo: emilse@gmail.com
+Detalles de la compra: [{"titulo":"Abrigito","cantidad":1},{"titulo":"Abrigito Acojedor","cantidad":1}]
+
+Correo: emilse@gmail.com
+Detalles de la compra: [{"titulo":"Zapatillas Tenis","cantidad":1},{"titulo":"Mocasines","cantidad":1},{"titulo":"Mocasines Mujer","cantidad":1}]
+
