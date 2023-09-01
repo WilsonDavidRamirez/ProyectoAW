@@ -47,8 +47,9 @@ session_start();
                         echo '<button type="submit"  class="btnContact" title="Cerrar sesión">logout</button>';
                         echo '</form>';
                     } else {
-                        echo '<a href="login.php" class="btnContact" style="text-decoration:none;">Login</a>';
-                        echo '<a href="registrate.php" class="btnContact  "style="text-decoration:none;">Registrarse</a>';
+                        echo '<p><a href="login.php" class="btnContact" style="text-decoration:none;">Login</a></p>';
+                        echo '<br>';
+                        echo '<p><a href="registrate.php" class="btnContact  "style="text-decoration:none;">Registrarse</a></p>';
                     }
                     ?>
                 </div>
