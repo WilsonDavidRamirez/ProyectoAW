@@ -75,56 +75,73 @@
             </center>
             <div class="row no-gutters">
                 <div class="contact-form__wrapper p-5 order-lg-1">
-                    <form method="post" class="contact-form form-validate" id="work" name="work">
-                        <div class="row">
-                            <div class="col-sm-6 mb-3">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="txtName" name="txtName"
-                                        placeholder="Name *" required>
-                                </div>
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="txtName" name="txtName"
+                                    placeholder="Name *">
                             </div>
-                            <div class="col-sm-6 mb-3">
-                                <div class="form-group">
-                                    <input type="number" class="form-control" id="txtPhone" name="txtPhone"
-                                        placeholder="Phone Number *" required>
-                                </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="txtPhone" name="txtPhone"
+                                    placeholder="Phone Number *">
                             </div>
-                            <div class="col-sm-6 mb-3">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="txtAddress" name="txtAddress"
-                                        placeholder="Address *" required>
-                                </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="txtAddress" name="txtAddress"
+                                    placeholder="Address *">
                             </div>
+                        </div>
 
 
-                            <div class="col-sm-6 mb-3">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="txtEmail" name="txtEmail"
-                                        placeholder="Email *" required>
-                                </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="txtEmail" name="txtEmail"
+                                    placeholder="Email *">
                             </div>
-                            <div class="col-sm-6 mb-3">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="txtCity" name="txtCity"
-                                        placeholder="City *">
-                                </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="txtCity" name="txtCity"
+                                    placeholder="City *">
                             </div>
-                            <div class="col-sm-6 mb-3">
-                                <div class="form-group">
-                                    <select name="puesto" class="form-control">
-                                        <option value="asociado">Sales Associate</option>
-                                        <option value="visual">Visual Merchandiser</option>
-                                        <option value="almacen">Warehouse/logistics staff</option>
-                                    </select>
-                                </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-group">
+                                <select name="puesto" id="puesto" class="form-control">
+                                    <option value="Sales Associate">Sales Associate</option>
+                                    <option value="Visual Merchandiser">Visual Merchandiser</option>
+                                    <option value="Warehouse/logistics staff">Warehouse/logistics staff</option>
+                                </select>
                             </div>
-                            <div class="col-sm-12 mb-3 center-button">
-                                <div class="form-group">
-                                    <input type="submit" name="btnSubmit" class="btnContact" value="Send Application" />
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-group">
+                                <label for="cv">Update CV</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="cv" name="cv"
+                                        accept="application/pdf" onchange="updateFileNameDisplay(this)">
+                                    <label class="custom-file-label" for="cv" id="cv-label">Select CV</label>
                                 </div>
                             </div>
                         </div>
-                    </form>
+
+                        <script>
+                            function updateFileNameDisplay(input) {
+                                const fileName = input.files[0].name;
+                                const fileLabel = document.getElementById('cv-label');
+                                fileLabel.textContent = fileName;
+                            }
+                        </script>
+
+                        <div class="col-sm-12 mb-3 center-button">
+                            <div class="form-group">
+                                <input type="button" id="btnSubmit2" class="btnContact" value="Send Application" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -142,6 +159,7 @@
 
 
 <script src="./js/ContactUs.js"></script>
+<script src="./js/Work_with_us.js"></script>
 
 </div>
 
