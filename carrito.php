@@ -30,6 +30,7 @@ session_start();
             </button>
             <header>
                 <h1 class="logo">Stock X</h1>
+                <p id="usuario" data-usuario="<?php echo $_SESSION["email"];?>"></p>
                 <?php
                 if (isset($_SESSION["email"])) {
                     // Usuario en sesión
