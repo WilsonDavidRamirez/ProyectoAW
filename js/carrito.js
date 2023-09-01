@@ -23,9 +23,8 @@ function cargarProductosCarrito() {
       const div = document.createElement("div");
       div.classList.add("carrito-producto");
       div.innerHTML = `
-                <img class="carrito-producto-imagen" src="${
-                  producto.imagen
-                }" alt="${producto.titulo}">
+                <img class="carrito-producto-imagen" src="${producto.imagen
+        }" alt="${producto.titulo}">
                 <div class="carrito-producto-titulo">
                     <small>Título</small>
                     <h3>${producto.titulo}</h3>
@@ -42,9 +41,8 @@ function cargarProductosCarrito() {
                     <small>Subtotal</small>
                     <p>$${producto.precio * producto.cantidad}</p>
                 </div>
-                <button class="carrito-producto-eliminar" id="${
-                  producto.id
-                }"><i class="bi bi-trash-fill"></i></button>
+                <button class="carrito-producto-eliminar" id="${producto.id
+        }"><i class="bi bi-trash-fill"></i></button>
             `;
 
       contenedorCarritoProductos.append(div);
@@ -88,7 +86,7 @@ function eliminarDelCarrito(e) {
       x: "1.5rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
       y: "1.5rem", // vertical axis - can be a number or a string indicating unity. eg: '2em'
     },
-    onClick: function () {}, // Callback after click
+    onClick: function () { }, // Callback after click
   }).showToast();
 
   const idBoton = e.currentTarget.id;
@@ -161,7 +159,11 @@ function actualizarTotal() {
   total.innerText = `$${totalCalculado}`;
 }
 
+const usuarioele = document.getElementById('usuario');
+const correo = usuarioele.getAttribute('data-usuario');
+
 botonComprar.addEventListener("click", comprarCarrito);
+
 function comprarCarrito() {
   var titulosArray = [];
 
@@ -173,12 +175,14 @@ function comprarCarrito() {
   }
 
   console.log(titulosArray);
+  const detalles = JSON.stringify(titulosArray);
+  const contenido = `Correo: ${correo}\nDetalles de la compra: ${detalles}\n\n`;
 
   $.ajax({
     data: {
-      vendidos: titulosArray,
+      info: contenido
     },
-    url: "server.php",
+    url: "guardar_archivo.php",
     type: "post",
     dataType: "json",
     success: function (response) {
@@ -197,3 +201,7 @@ function comprarCarrito() {
   contenedorCarritoAcciones.classList.add("disabled");
   contenedorCarritoComprado.classList.remove("disabled");
 }
+
+
+
+
