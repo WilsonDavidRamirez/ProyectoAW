@@ -26,15 +26,15 @@ function cargarProductosCarrito() {
                 <img class="carrito-producto-imagen" src="${producto.imagen
         }" alt="${producto.titulo}">
                 <div class="carrito-producto-titulo">
-                    <small>Título</small>
+                    <small>Title</small>
                     <h3>${producto.titulo}</h3>
                 </div>
                 <div class="carrito-producto-cantidad">
-                    <small>Cantidad</small>
+                    <small>Amount</small>
                     <p>${producto.cantidad}</p>
                 </div>
                 <div class="carrito-producto-precio">
-                    <small>Precio</small>
+                    <small>Price</small>
                     <p>$${producto.precio}</p>
                 </div>
                 <div class="carrito-producto-subtotal">
@@ -70,7 +70,7 @@ function actualizarBotonesEliminar() {
 
 function eliminarDelCarrito(e) {
   Toastify({
-    text: "Producto eliminado",
+    text: "product removed",
     duration: 3000,
     close: true,
     gravity: "top", // `top` or `bottom`
@@ -129,15 +129,15 @@ function vaciarCarrito() {
   });
 
   Swal.fire({
-    title: "¿Estás seguro?",
+    title: "¿You're sure?",
     icon: "question",
-    html: `Se van a borrar ${productosEnCarrito.reduce(
+    html: `they are going to erase ${productosEnCarrito.reduce(
       (acc, producto) => acc + producto.cantidad,
       0
-    )} productos.`,
+    )} products.`,
     showCancelButton: true,
     focusConfirm: false,
-    confirmButtonText: "Sí",
+    confirmButtonText: "yes",
     cancelButtonText: "No",
   }).then((result) => {
     if (result.isConfirmed) {
@@ -176,7 +176,7 @@ function comprarCarrito() {
 
   console.log(titulosArray);
   const detalles = JSON.stringify(titulosArray);
-  const contenido = `Correo: ${correo}\nDetalles de la compra: ${detalles}\n\n`;
+  const contenido = `email: ${correo}\nPurchase details: ${detalles}\n\n`;
 
   $.ajax({
     data: {
