@@ -60,29 +60,28 @@ session_start();
                 <ul class="menu">
                     <li>
                         <button id="todos" class="boton-menu boton-categoria active"><i
-                                class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                                class="bi bi-hand-index-thumb-fill"></i>All the products</button>
                     </li>
                     <li>
-                        <button id="casuales" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
-                            Casuales</button>
+                        <button id="casual" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
+                        Casual</button>
                     </li>
                     <li>
-                        <button id="deportivos" class="boton-menu boton-categoria"><i
-                                class="bi bi-hand-index-thumb"></i>
-                            Deportivos</button>
+                        <button id="sporting" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
+                        Sporting</button>
                     </li>
                     <li>
-                        <button id="formales" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
-                            Formales</button>
+                        <button id="formals" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
+                        Formals</button>
                     </li>
                     <li>
                         <a class="boton-menu boton-carrito" href="./carrito.php">
-                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                            <i class="bi bi-cart-fill"></i> Shopping cart <span id="numerito" class="numerito">0</span>
                         </a>
                     </li>
                     <li>
                         <a class="boton-menu boton-carrito" href="./home.php   ">
-                            <i class="bi bi-arrow-return-left"></i> Regresar </a>
+                            <i class="bi bi-arrow-return-left"></i> Go back </a>
                     </li>
                 </ul>
             </nav>
@@ -91,7 +90,7 @@ session_start();
             </footer>
         </aside>
         <main>
-            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <h2 class="titulo-principal" id="titulo-principal">All the products</h2>
             <div id="contenedor-productos" class="contenedor-productos">
 
         </main>
