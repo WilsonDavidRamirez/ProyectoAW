@@ -34,14 +34,12 @@ session_start();
                 <h1>Stock X</h1>
                 <div id="mensaje-bienvenida">
                     <?php
-                    // Verificar si el usuario está en sesión y mostrar el mensaje y el botón de cierre de sesión
                     if (isset($_SESSION["email"])) {
                         echo "Bienvenido, " . $_SESSION["email"] . ". Estás en sesión.";
                         echo '<form action="logout.php" method="post">';
                         echo '<button type="submit" title="Cerrar sesión">Cerrar sesión</button>';
                         echo '</form>';
                     } else {
-                        // Mostrar botón para iniciar sesión si no está en sesión
                         echo '<a href="login.php">Iniciar sesión</a>';
                     }
                     ?>
@@ -63,8 +61,11 @@ session_start();
                     </li>
 
                     <li>
-                        <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
-                            Cont Us</button>
+                        <a href="Contact_Work.php">
+                            <button id="camisetas" class="boton-menu boton-categoria"><i
+                                    class="bi bi-hand-index-thumb"></i>
+                                Cont Us</button>
+                        </a>
                     </li>
                 </ul>
             </nav>

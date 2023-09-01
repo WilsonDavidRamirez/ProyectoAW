@@ -36,6 +36,16 @@ $(document).ready(function () {
       },
     });
 
+    $("#txtName").val("");
+    $("#txtPhone").val("");
+    $("#txtAddress").val("");
+    $("#txtEmail").val("");
+    $("#txtCity").val("");
+    $("#puesto").val("");
+    $("#cv").val("");
+    $("#cv").val(null);
+    $("#cv-label").text("Select CV");
+
     return true;
   });
 });

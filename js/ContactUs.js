@@ -71,6 +71,12 @@ $(document).ready(function () {
       },
     });
 
+    $("#firstName").val("");
+    $("#lastName").val("");
+    $("#email").val("");
+    $("#phone").val("");
+    $("#message").val("");
+
     return true;
   });
 });
