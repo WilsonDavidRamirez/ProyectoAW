@@ -41,12 +41,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])) {
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="./css/main.css">
     <style>
+    @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
     .wrapper2 {
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
         background-color: var(--clr-main);
+        font-family: "Rubik", sans-serif;
     }
 
     .error-message {
@@ -72,9 +75,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])) {
                     <input type="password" name="password" class="form-control" id="password"
                         placeholder="Ingrese su contraseña" required>
                 </div>
-                <button type="submit" name="login" class="producto-agregar boton-login">Iniciar sesión</button>
+                <center>
+                    <button type="submit" name="login" class="producto-agregar boton-login">Iniciar sesión</button>
+                </center>
             </form>
-            <a href="registrate.php" class="btn producto-agregar">Registrarse</a>
+
+            <center><a href="registrate.php" class="btn producto-agregar">Registrarse</a></center>
             <?php
             if (isset($loginError)) {
                 echo "<p class='error'>$loginError</p>";

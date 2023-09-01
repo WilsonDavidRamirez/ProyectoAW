@@ -91,9 +91,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register"])) {
                     <input type="password" name="password" class="form-control" id="password"
                         placeholder="Ingrese su contraseña" required>
                 </div>
-                <button type="submit" name="register" class="producto-agregar boton-login">Registrarse</button>
+                <center>
+                    <button type="submit" name="register" class="producto-agregar boton-login">Registrarse</button>
+                </center>
             </form>
-            <a href="login.php" class="btn producto-agregar">Iniciar Sesión</a>
+            <center>
+                <a href="login.php" class="btn producto-agregar">Iniciar Sesión</a>
+            </center>
             <?php
             if (!empty($registrationMessage)) {
                 echo "<p class='registration-message'>$registrationMessage</p>";

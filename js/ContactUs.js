@@ -71,11 +71,9 @@ $(document).ready(function () {
       },
     });
 
-    $("#firstName").val("");
-    $("#lastName").val("");
-    $("#email").val("");
-    $("#phone").val("");
-    $("#message").val("");
+    setTimeout(function () {
+      location.reload();
+    }, 3000);
 
     return true;
   });
