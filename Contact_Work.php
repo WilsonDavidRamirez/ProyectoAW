@@ -17,9 +17,7 @@ session_start();
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
     <link rel="stylesheet" href="./css/Count_Us.css" />
-
 
 </head>
 
@@ -37,22 +35,24 @@ session_start();
             </button>
             <header>
                 <h1>Stock X</h1>
+                <br>
                 <div id="mensaje-bienvenida">
                     <?php
                     // Verificar si el usuario está en sesión y mostrar el mensaje y el botón de cierre de sesión
                     if (isset($_SESSION["email"])) {
-                        echo "Bienvenido, " . $_SESSION["email"] . ". Estás en sesión.";
+                        echo "Welcome, " . $_SESSION["email"] . ". <div><br></div>";
                         echo '<form action="logout.php" method="post">';
-                        echo '<button type="submit" title="Cerrar sesión">Cerrar sesión</button>';
+                        echo '<button type="submit"  class="btnContact" title="Cerrar sesión">logout</button>';
                         echo '</form>';
                     } else {
                         // Mostrar botón para iniciar sesión si no está en sesión
-                        echo '<a href="login.php">Iniciar sesión</a>';
+                        echo '<a href="login.php" class="btnContact" style="text-decoration:none;">Login</a>';
+                        echo '<button type="submit"  class="btnContact" title="Cerrar sesión">logout</button>';
                     }
                     ?>
                 </div>
             </header>
-            <br> <br> <br> <br> <br> <br> <br>
+             <br> <br> <br> <br> <br>
             <nav>
                 <ul class="menu">
                     <li>

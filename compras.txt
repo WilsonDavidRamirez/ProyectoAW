@@ -7,3 +7,6 @@ Detalles de la compra: [{"titulo":"Abrigito","cantidad":1},{"titulo":"Abrigito A
 Correo: emilse@gmail.com
 Detalles de la compra: [{"titulo":"Zapatillas Tenis","cantidad":1},{"titulo":"Mocasines","cantidad":1},{"titulo":"Mocasines Mujer","cantidad":1}]
 
+Correo: emilse@gmail.com
+Detalles de la compra: [{"titulo":"Zapatillas Tenis","cantidad":1}]
+

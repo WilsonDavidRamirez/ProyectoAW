@@ -15,10 +15,15 @@ session_start();
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    
+    <link rel="stylesheet" href="./css/Count_Us.css" />
 
 </head>
+<style>
+</style>
 
 <body>
+
     <div class="wrapper">
         <header class="header-mobile">
             <h1 class="logo">Stock X</h1>
@@ -32,20 +37,25 @@ session_start();
             </button>
             <header>
                 <h1>Stock X</h1>
+                <br>
+                <br>
                 <div id="mensaje-bienvenida">
                     <?php
                     if (isset($_SESSION["email"])) {
-                        echo "Bienvenido, " . $_SESSION["email"] . ". Estás en sesión.";
+                        echo "Welcome, " . $_SESSION["email"] . ". <div><br></div>";
                         echo '<form action="logout.php" method="post">';
-                        echo '<button type="submit" title="Cerrar sesión">Cerrar sesión</button>';
+                        echo '<button type="submit"  class="btnContact" title="Cerrar sesión">logout</button>';
                         echo '</form>';
                     } else {
-                        echo '<a href="login.php">Iniciar sesión</a>';
+                        echo '<a href="login.php" class="btnContact" style="text-decoration:none;">Login</a>';
+                        echo '<a href="registrate.php" class="btnContact  "style="text-decoration:none;">Registrarse</a>';
                     }
                     ?>
                 </div>
             </header>
-            <br> <br> <br> <br> <br> <br> <br>
+            <br>
+            <br>
+      
             <nav>
                 <ul class="menu">
                     <li>

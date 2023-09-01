@@ -13,6 +13,7 @@ session_start();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/Count_Us.css" />
 </head>
 
 <body>
@@ -34,18 +35,18 @@ session_start();
                 <?php
                 if (isset($_SESSION["email"])) {
                     // Usuario en sesión
-                    echo "Bienvenido, " . $_SESSION["email"] . ". Estás en sesión.";
+                    echo "Welcome, " . $_SESSION["email"] . ". <div><br></div>";
                     echo '<form action="logout.php" method="post">';
-                    echo '<button type="submit" title="Cerrar sesión">Cerrar sesión</button>';
+                    echo '<button type="submit"  class="btnContact" title="Cerrar sesión">logout</button>';
                     echo '</form>';
                 } else {
                     // Usuario no en sesión
                     if (isset($_GET["type"]) && $_GET["type"] === "sneakers") {
                         // Mostrar botón de inicio de sesión si no está en sesión y en la página "sneakers"
-                        echo '<a href="login.php">Iniciar sesión</a>';
+                        echo '<a href="login.php" class="btnContact" style="text-decoration:none;">Login</a>';
                     } else {
                         // Mostrar botón de inicio de sesión si no está en sesión en otras páginas
-                        echo '<a href="login.php">Iniciar sesión</a>';
+                        echo '<a href="login.php" class="btnContact" style="text-decoration:none;">Login</a>';
                     }
                 }
                 ?>
@@ -97,7 +98,7 @@ session_start();
                         echo '<button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>';
                     } else {
                         echo '<div class="carrito-acciones-derecha">';
-                        echo '    <a href="login.php" class="carrito-acciones-vaciar">Inicia Sesión</a>';
+                        echo '    <a href="login.php" class="carrito-acciones-vaciar">Login</a>';
                         echo '</div>';
                     }
                     ?>
