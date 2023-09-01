@@ -44,11 +44,12 @@ session_start();
                 } else {
                     // Usuario no en sesión
                     if (isset($_GET["type"]) && $_GET["type"] === "sneakers") {
-                        // Mostrar botón de inicio de sesión si no está en sesión y en la página "sneakers"
-                        echo '<a href="login.php" class="btnContact" style="text-decoration:none;">Login</a>';
+                        // Mostrar botón de inicio de sesión si no está en sesión y en la página "sneakers">';
+                        echo '<p><a href="login.php" class="btnContact" style="text-decoration:none;">Login</a></p>';
+                
                     } else {
                         // Mostrar botón de inicio de sesión si no está en sesión en otras páginas
-                        echo '<a href="login.php" class="btnContact" style="text-decoration:none;">Login</a>';
+                        echo '<p><a href="login.php" class="btnContact" style="text-decoration:none;">Login</a></p>';
                     }
                 }
                 ?>

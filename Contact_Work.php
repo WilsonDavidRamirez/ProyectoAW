@@ -46,13 +46,14 @@ session_start();
                         echo '</form>';
                     } else {
                         // Mostrar botón para iniciar sesión si no está en sesión
-                        echo '<a href="login.php" class="btnContact" style="text-decoration:none;">Login</a>';
-                        echo '<button type="submit"  class="btnContact" title="Cerrar sesión">logout</button>';
+                        echo '<p><a href="login.php" class="btnContact" style="text-decoration:none;">Login</a></p>';
+                        echo '<br>';
+                        echo '<p><a href="registrate.php" class="btnContact  "style="text-decoration:none;">Registrarse</a></p>';
                     }
                     ?>
                 </div>
             </header>
-            <br> <br> <br> <br> <br>
+            <br> <br> <br> 
             <nav>
                 <ul class="menu">
                     <li>

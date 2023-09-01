@@ -47,7 +47,12 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
                         echo '<a href="login.php" class="btnContact" style="text-decoration:none;">Login</a>';
                     } else {
                         // Mostrar botón de inicio de sesión si no está en sesión en otras páginas
-                        echo '<a href="login.php" class="btnContact" style="text-decoration:none;">Login</a>';
+                        echo '<br>';
+                        echo '<br>';
+                        echo '<p><a href="login.php" class="btnContact" style="text-decoration:none;">Login</a></p>';
+                        echo '<br>';
+                        echo '<br>';
+                        echo '<p><a href="registrate.php" class="btnContact  "style="text-decoration:none;">Registrarse</a></p>';
                     }
                 }
                 ?>
@@ -67,7 +72,7 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
                 </ul>
             </nav>
             <footer>
-                <p class="texto-footer">© 2023 ServiEntrega</p>
+                <p class="texto-footer">© 2023 Stock X</p>
             </footer>
         </aside>
         <main>

@@ -10,3 +10,6 @@ Detalles de la compra: [{"titulo":"Zapatillas Tenis","cantidad":1},{"titulo":"Mo
 Correo: emilse@gmail.com
 Detalles de la compra: [{"titulo":"Zapatillas Tenis","cantidad":1}]
 
+Correo: emilse@gmail.com
+Detalles de la compra: [{"titulo":"Zapatillas Tenis","cantidad":1}]
+

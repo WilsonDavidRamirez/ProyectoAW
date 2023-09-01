@@ -1,6 +1,6 @@
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const contenedorProductos = document.getElementById("contenedor-productos");
-
+//Especifican los archivos html y se los carga al php
 const categoriaArchivoMap = {
   todos: "stock.html",
   abrigos: "Sneakers.html",
